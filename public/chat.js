@@ -1,4 +1,4 @@
-const socket = io.connect('localhost:3000');
+const socket = io.connect('https://chat-app2534.glitch.me/');
 const sender = document.getElementById('sender');
 const message = document.getElementById('message');
 const submitButton = document.getElementById('submit-button');
