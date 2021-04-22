@@ -12,5 +12,6 @@ io.on('connection', (socket) => {
 	
 	socket.on('chat-message', (data) => {
 		socket.broadcast.emit('chat', data);
+		console.log('Message from: ', data.sender, 'Message: ', data.message);
 	});
 });
